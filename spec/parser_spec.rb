@@ -2,6 +2,7 @@
 
 require 'test_helper'
 
+# rubocop:disable Metrics/BlockLength
 describe Parser do
   context 'Failure' do
     it 'raise an argument error when no path passed' do
@@ -20,5 +21,28 @@ describe Parser do
   end
 
   context 'Success' do
+    let(:file) { file_path }
+
+    it 'show report' do
+      report = [
+        'Page Views',
+        '/about/2 90 views',
+        '/contact 89 views',
+        '/index 82 views',
+        '/about 81 views',
+        '/help_page/1 80 views',
+        '/home 78 views',
+        'Uniq Page Views',
+        '/index 23 uniq views',
+        '/home 23 uniq views',
+        '/contact 23 uniq views',
+        '/help_page/1 23 uniq views',
+        '/about/2 22 uniq views',
+        "/about 21 uniq views\n"
+      ].join("\n")
+
+      expect { described_class.new(file).parse }.to output(report).to_stdout
+    end
   end
 end
+# rubocop:enable Metrics/BlockLength
