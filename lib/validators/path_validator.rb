@@ -2,7 +2,7 @@
 
 module Validators
   class PathValidator
-    PATTERN = %r{\A/[\W\-]*(/[\W\-]*)*\z}.freeze
+    PATTERN = %r{\A/[\w\-]*(/[\w\-]*)?\z}.freeze
     def initialize(path)
       @path = path
     end

@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require './lib/validators/ip_validator'
+require './lib/validators/path_validator'
+
 module Validators
   class LogLineValidator
     def initialize(path, ip)
