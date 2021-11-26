@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ipaddress'
+# require 'ipaddress'
 
 module Validators
   class IpValidator

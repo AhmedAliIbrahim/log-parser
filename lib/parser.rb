@@ -3,8 +3,8 @@
 require './lib/errors/file_not_found'
 require './lib/errors/missing_argument'
 require './lib/log_parser'
-require './reports/page_views_report'
-require './reports/uniq_page_views_report'
+require './lib/reports/page_views_report'
+require './lib/reports/uniq_page_views_report'
 
 class Parser
   include Errors
