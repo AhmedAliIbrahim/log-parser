@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'rspec'
-gem 'rubocop'
-gem 'simplecov'
+gem 'brakeman', '~> 5.1'
+gem 'rspec', '~> 3.10'
+gem 'rubocop', '~> 1.23'
+gem 'simplecov', '0.21'
