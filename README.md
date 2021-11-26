@@ -1,9 +1,16 @@
 # Log Parser
 
-## How to run
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+bundle
 
 ```
+
 $ ./parser.rb webserver.log
+
 ```
 
 ## Example output
@@ -11,6 +18,7 @@ $ ./parser.rb webserver.log
 `$ ./parser.rb webserver.log`
 
 ```
+
 Page Views
 /about/2 90 views
 /contact 89 views
@@ -25,6 +33,7 @@ Uniq Page Views
 /help_page/1 23 uniq views
 /about/2 22 uniq views
 /about 21 uniq views
+
 ```
 
 ### Development
@@ -32,8 +41,12 @@ Uniq Page Views
 Install, run tests, run linter, run script itself
 
 ```
+
 $ bundle
 $ bundle exec rspec
 $ bundle exec rubocop -a
 $ ruby parser.rb webserver.log
+
+```
+
 ```
