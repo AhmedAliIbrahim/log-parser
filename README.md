@@ -19,6 +19,8 @@ $ ./parser.rb webserver.log
 
 ```
 
+```
+
 Page Views
 /about/2 90 views
 /contact 89 views
@@ -33,6 +35,8 @@ Uniq Page Views
 /help_page/1 23 uniq views
 /about/2 22 uniq views
 /about 21 uniq views
+
+```
 
 ```
 
