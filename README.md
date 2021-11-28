@@ -17,10 +17,6 @@ $ ./parser.rb webserver.log
 
 `$ ./parser.rb webserver.log`
 
-```
-
-```
-
 Page Views
 /about/2 90 views
 /contact 89 views
@@ -43,10 +39,6 @@ Uniq Page Views
 ### Development
 
 Install, run tests, run linter, run script itself
-
-```
-
-```
 
 $ bundle
 $ bundle exec rspec
