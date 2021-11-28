@@ -46,11 +46,11 @@ Install, run tests, run linter, run script itself
 
 ```
 
+```
+
 $ bundle
 $ bundle exec rspec
 $ bundle exec rubocop -a
 $ ruby parser.rb webserver.log
-
-```
 
 ```
