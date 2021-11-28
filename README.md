@@ -8,7 +8,6 @@ Add this line to your application's Gemfile:
 bundle
 
 ```
-
 $ ./parser.rb webserver.log
 
 ```
@@ -36,7 +35,7 @@ Uniq Page Views
 
 ```
 
-### Development
+## Development
 
 Install, run tests, run linter, run script itself
 
